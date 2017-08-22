@@ -3,6 +3,7 @@ This is a simple service registry based on Netflix Eureka
 **Implementation Details**
 ---------------------------
 Nothing other than _@EnableEurekaServer_  and setting up the application.properties are required here.
+  
 
 **Run**:
 -----------------

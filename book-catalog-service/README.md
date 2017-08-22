@@ -4,3 +4,6 @@ A simple book catalog service.
   - make itself discoverable by registering to Eureka service registry
 
 
+**Access**:
+http://localhost:8080/books
+

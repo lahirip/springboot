@@ -25,11 +25,12 @@ public class BookCatalogServiceApplication {
 	@Bean
 	ApplicationRunner init(BookRepository repository) {
 		return (args) -> {
-			repository.save(new Book("AI123", "Pallab", "Polygot programming", 2016));
-			repository.save(new Book("AI443", "Pallab", "PL/SQL programming", 2016));
-			repository.save(new Book("AI153", "Pallab", "NoSQL At Ease", 2016));
-			repository.save(new Book("AI163", "Pallab", "Peer programming", 2016));
-			repository.save(new Book("AI173", "Pallab", "Code Review", 2016));
+			repository.save(new Book("AI123", "Pallab", "Polygot programming", 2016, "Tech"));
+			repository.save(new Book("AI443", "Pallab", "PL/SQL programming", 2016, "Tech"));
+			repository.save(new Book("AI153", "Pallab", "Not Again", 2016, "fiction"));
+			repository.save(new Book("AI163", "Pallab", "Peer programming", 2016, "Tech"));
+			repository.save(new Book("AI173", "Pallab", "Code Review", 2016, "Tech"));
+			repository.save(new Book("AI173", "Pallab", "The Kite Boy", 2016, "fiction"));
 
 			log.info("All Books");
 			log.info("-------------------------------");

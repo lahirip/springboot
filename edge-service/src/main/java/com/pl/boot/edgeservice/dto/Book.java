@@ -1,16 +1,7 @@
-package com.pl.boot.bookcatalogservice.entity;
+package com.pl.boot.edgeservice.dto;
 
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-
-@Entity
 public class Book {
 
-    @Id
-    @GeneratedValue
-    Long id;
 
     String isbn;
     String author;
@@ -18,9 +9,7 @@ public class Book {
     int pubYear;
     String type;
 
-    public Book() {
 
-    }
 
     public Book(String isbn, String author, String title, int pubYear, String type) {
         this.isbn = isbn;
@@ -30,13 +19,6 @@ public class Book {
         this.type = type;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getType() {
         return type;
@@ -82,12 +64,11 @@ public class Book {
     @Override
     public String toString() {
         return "Book{" +
-                "id=" + id +
-                ", isbn='" + isbn + '\'' +
+                "isbn='" + isbn + '\'' +
                 ", author='" + author + '\'' +
                 ", title='" + title + '\'' +
                 ", pubYear=" + pubYear +
-                ", type='" + type + '\'' +
                 '}';
     }
+
 }
